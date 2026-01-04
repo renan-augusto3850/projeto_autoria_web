@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resetar senha</title>
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/nova_senha.css" />
+    <link rel="icon" href="/imgs/logo.svg" type="image/svg+xml" />
+    <script src="js/nova_senha.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <button class="transparent-button" id="back-button">
+        <img src="imgs/arrow-left.svg" alt="Ícone de seta" />
+      </button>
+
+      <a href="index.html"><img id="logo" src="/imgs/logo.svg" alt="Logo" /></a>
+      <h1>H1Learn</h1>
+    </header>
+
+    <div class="toast-wrapper">
+      <div class="toast-error" id="toast-error">
+        <span
+          ><img src="/imgs/nao.svg" alt="ícone de erro" class="toast-icon"
+        /></span>
+        <p></p>
+      </div>
+    </div>
+
+    <main>
+      <form id="form">
+        <img
+          id="user_logo"
+          src="/imgs/user_logo.svg"
+          alt="Imagem de perfil do usuário"
+          loading="lazy"
+        />
+
+        <div class="inputs">
+          <div class="password-container">
+            <input
+              type="password"
+              placeholder="Nova senha:"
+              name="password"
+              id="password"
+              maxlength="12"
+            />
+
+            <span id="eye-span-1"
+              ><img
+                id="eye-password"
+                src="/imgs/password.svg"
+                alt="Ícone de visualizar senha"
+                loading="lazy"
+              />
+              <img
+                id="hide-password"
+                src="/imgs/password2.svg"
+                alt="Ícone de esconder senha"
+                loading="lazy"
+              />
+            </span>
+          </div>
+
+          <div class="confirm-password-container">
+            <input
+              type="password"
+              placeholder="Repetir a senha:"
+              name="confirm-password"
+              id="confirm-password"
+              maxlength="12"
+            />
+
+            <span id="eye-span-2"
+              ><img
+                id="eye-confirm-password"
+                src="/imgs/password.svg"
+                alt="Ícone de visualizar senha"
+                loading="lazy" />
+
+              <img
+                id="hide-confirm-password"
+                src="/imgs/password2.svg"
+                alt="Ícone de esconder senha"
+                loading="lazy"
+            /></span>
+          </div>
+        </div>
+
+        <button type="submit">Redefinir</button>
+
+        <p>Não tem uma conta? <a href="cadastro.html"> Cadastre-se</a>.</p>
+      </form>
+    </main>
+  </body>
+</html>
