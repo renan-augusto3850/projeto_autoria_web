@@ -60,6 +60,7 @@ button:hover {
 }
 
 h1,
+h2,
 p {
   color: var(--pureWhite);
 }
