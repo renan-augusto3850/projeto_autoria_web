@@ -42,10 +42,10 @@ button {
   background-color: #8c49e5;
   color: var(--pureWhite);
   border-radius: 9999px;
-  padding: 0.7rem 0.5rem;
+  padding:1rem 1.5rem;
   border: none;
   font-size: 1.2rem;
-  width: 8rem;
+  width: max-content;
   font-weight: bold;
   cursor: pointer;
   transition: background-color 0.1s;
@@ -59,6 +59,7 @@ button:hover {
   display: flex;
   background-color: transparent;
   width: max-content;
+  text-wrap: nowrap;
   border-radius: 0;
   padding: 0;
   transition: transform 0.2s ease-in-out;

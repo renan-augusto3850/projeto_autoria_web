@@ -49,14 +49,8 @@ header {
 }
 
 button {
-  font-size: 1.5rem;
-  border-radius: 50px;
-  width: 20vw;
-  display: flex;
-  align-self: center;
-  justify-content: center;
-  padding: 1rem 0.5rem 1rem 0.5rem;
   margin: 10rem;
+  align-self: center;
 
   a {
     text-decoration: none;
@@ -75,6 +69,7 @@ button {
   border-radius: 10px;
   gap: 1rem;
   position: relative;
+
   p {
     position: absolute;
     bottom: 2rem;
@@ -93,8 +88,8 @@ button {
   gap: 2rem;
 
   img {
-    width: 23vw;
-    height: auto;
+    width: 90%;
+    margin: auto;
     border-radius: 5px;
   }
 }
