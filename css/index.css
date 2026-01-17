@@ -55,6 +55,16 @@ header {
   transition: background 0.2s ease-in-out;
 }
 
+#header.scrolled {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+}
+
+header > .user {
+  position: absolute;
+  right: 1rem;
+}
+
 button:hover {
   background-color: var(--button-hover);
 }
