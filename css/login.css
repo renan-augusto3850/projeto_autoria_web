@@ -6,6 +6,7 @@ body {
 
 main {
   display: flex;
+  flex-direction: row;
   height: 100%;
 }
 
@@ -15,6 +16,7 @@ main {
   background-size: cover;
   background-position: center;
   width: 50%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -36,6 +38,11 @@ main {
   );
 }
 
+.logo {
+  display: flex;
+  justify-content: center;
+}
+
 #logo {
   width: 12rem;
   cursor: pointer;
@@ -49,7 +56,17 @@ h1 {
   font-size: 4rem;
   font-family: "Source Code Pro";
   font-weight: 600;
+  margin: auto;
+  line-height: unset !important;
   letter-spacing: 0.5rem;
+}
+
+p {
+  display: flex;
+}
+
+a {
+  margin-left: 0.2rem;
 }
 
 .subtitle {
@@ -123,7 +140,30 @@ form {
 
 a {
   text-decoration: none;
-  color: var(--login-link);
+  color: var(--blue1);
+  margin-left: 0.2rem;
+}
+
+.ifrn_students {
+  background-color: var(--purple5);
+  width: 40vw;
+  height: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 3rem;
+  border-radius: 15px;
+
+  img {
+    width: 6vw;
+    height: auto;
+  }
+
+  p {
+    font-size: large;
+    font-weight: bold;
+  }
 }
 
 #hide-password,

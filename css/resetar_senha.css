@@ -16,6 +16,7 @@ body {
 
 main {
   position: relative;
+  width: max-content;
 }
 
 p {
@@ -23,7 +24,7 @@ p {
 }
 
 #logo {
-  width: 5rem;
+  width: 4rem;
   cursor: pointer;
 }
 
