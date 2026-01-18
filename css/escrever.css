@@ -17,12 +17,11 @@ body {
 }
 
 #question {
-  margin: 2rem;
-  width: 50vw;
+  width: 100vw;
   display: flex;
   align-items: self-start;
   flex-direction: column;
-  background-color: var(--purple1);
+  background-color: var(--purple6);
   padding: 2rem;
   border-radius: 15px;
   border: 2px solid var(--purple2);
