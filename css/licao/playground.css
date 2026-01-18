@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans+html:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+main {
+    flex-direction: row;
+    padding-top: 6.5rem;
+}
+
+.manual {
+    border-radius: 0;
+    margin-top: -22px;
+    background-color: var(--pureWhite);
+}
+
+.manual > iframe {
+    border: none;
+    border-radius: 0;
+    height: 87dvh;
+}
+
+.view {
+    display: flex;
+    width: 100%;
+    height: 44%;
+}
+
+.tab {
+    cursor: pointer;
+    padding: 8px 32px;
+    margin: 0 -4px;
+    background: var(--purple2);
+    color:#000;
+    color: var(--pureWhite);
+    display: inline-block;
+}
+
+.finish-div {
+    display: flex;
+    width: 100%;
+    padding: 1rem;
+    justify-content: flex-end;
+}
+
+.header {
+    display: flex;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: var(--purple5);
+    border-radius: 0;
+    padding: 0.1rem 0;
+    gap: 1rem;
+    width: 100dvw;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.tabs {
+    align-self: flex-end;
+    width: 44rem;
+}
+
+.tabs :nth-child(1 of .tab) {
+    border-radius: 16px 0 0;
+}
+
+.tabs :last-child {
+    border-radius: 0 16px 0 0;
+}
+
+.panels {
+  overflow: hidden;
+  padding: 0 2rem;
+  width: 100%;
+  height: 100%;
+}
+
+div, iframe {
+    border-radius: 0.5rem;
+}
+
+.panel {
+    position: relative;
+    display: none;
+    height: 100%;
+}
+
+.code > div{
+    background-color: var(--purple5);
+    border: solid 2px var(--purple2);
+    font-family: "Google Sans html", monospace;
+    outline: none;
+    overflow: auto;
+    white-space: pre-wrap;
+    padding: 1rem;
+    height: 32rem;
+}
+
+.result > iframe {
+    background-color: var(--pureWhite);
+    width: 100%;
+    height: 32rem;
+    border: none;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+#html-radio:checked ~ .panels #html-panel,
+#css-radio:checked ~ .panels #css-panel,
+#js-radio:checked ~ .panels #js-panel,
+#result-radio:checked ~ .panels #result-panel {
+  display: block;
+}
+
+#html-radio:checked ~ .header .tabs #html-tab,
+#css-radio:checked ~ .header .tabs #css-tab,
+#js-radio:checked ~ .header .tabs #js-tab,
+#result-radio:checked ~ .header .tabs #result-tab {
+  background-color: var(--purple1);
+}

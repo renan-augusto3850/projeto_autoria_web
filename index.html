@@ -3,17 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="/js/header.js" defer></script>
+    <script src="/js/router.js" defer></script>
     <title> Pagina Inicial</title>
 </head>
-<body>
-    <header>
-        <img src="img/Logo.svg" alt="logo do site">
+<body id="content">
+    <header id="header">
+        <img src="/imgs/logo.svg" alt="logo do site">
     </header>
     <main>
         <h1>
            O aprendizado começa aqui.
         </h1>
-        <button>
+        <button id="start_now">
             Começe Hoje
         </button>
         <section>
@@ -48,7 +51,7 @@
                 <img src="img/Lição - Complete o código.svg">
                 <img src="img/Lição - Selecione a correta - Mensagem.svg">
             </div>
-            <button>
+            <button id="start_now">
                 Começe Hoje
             </button>
         </section>
@@ -62,3 +65,6 @@
     </footer>
 </body>
 </html>
+<script>
+    start_now.addEventListener("click", () => push("/linguagem/html.html"))
+</script>
