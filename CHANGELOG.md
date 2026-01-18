@@ -4,6 +4,7 @@
 
     - Adicionado index.html
     - Criada a primeira lição de tags HTML.
+    - Adicionado telas de cadastro, login e resetar senha
 
 ## Changes
 

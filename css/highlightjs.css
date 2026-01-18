@@ -21,7 +21,7 @@ code.hljs {
 }
 .hljs-punctuation,
 .hljs-tag {
-  color: var(--purple2);
+  color: var(--purple4);
 }
 .hljs-tag .hljs-attr,
 .hljs-tag .hljs-name {
@@ -48,7 +48,7 @@ code.hljs {
 }
 .hljs-section,
 .hljs-title {
-  color: var(--red1);
+  color: var(--red);
   font-weight: 700;
 }
 .hljs-link,
@@ -68,7 +68,7 @@ code.hljs {
 .hljs-built_in,
 .hljs-bullet,
 .hljs-code {
-  color: var(--green1);
+  color: var(--purple1);
 }
 .hljs-meta {
   color: #1f7199;

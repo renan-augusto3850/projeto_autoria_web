@@ -7,7 +7,7 @@ body {
 
 #lesson {
   min-height: 100vh;
-  background-color: var(--purple4);
+  background-color: var(--gradient1);
   gap: 1rem;
   flex: 1;
   display: flex;

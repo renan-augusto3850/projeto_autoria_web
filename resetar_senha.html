@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resetar senha</title>
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/resetar_senha.css" />
+    <link rel="icon" href="/imgs/logo.svg" type="image/svg+xml" />
+    <script src="js/resetar_senha.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <button class="transparent-button" id="back-button">
+        <img src="imgs/arrow-left.svg" alt="Ícone de seta" />
+      </button>
+
+      <a href="index.html"><img id="logo" src="/imgs/logo.svg" alt="Logo" /></a>
+      <h1>H1Learn</h1>
+    </header>
+
+    <div class="toast-wrapper">
+      <div class="toast-error" id="toast-error">
+        <span
+          ><img src="/imgs/x-error.svg" alt="ícone de erro" class="toast-icon"
+        /></span>
+        <p></p>
+      </div>
+    </div>
+
+    <main>
+      <span id="toast-notification">
+        <img src="/imgs/badge-info.svg" alt="Ícone de notificação" />
+        <p>Enviaremos um email com instruções para resetar sua senha.</p>
+      </span>
+      <form id="form">
+        <p>Redefinir senha:</p>
+
+        <div class="user-email">
+          <img
+            id="user_logo"
+            src="/imgs/user.svg"
+            alt="Imagem de perfil do usuário"
+            loading="lazy"
+          />
+
+          <div class="email-container">
+            <input type="email" placeholder="Email:" name="email" id="email" />
+
+            <span
+              ><img src="/imgs/email.svg" alt="Ícone de email" loading="lazy"
+            /></span>
+          </div>
+        </div>
+
+        <button id="submit-btn" type="submit">Enviar</button>
+      </form>
+    </main>
+  </body>
+</html>

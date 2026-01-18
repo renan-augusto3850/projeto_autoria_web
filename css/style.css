@@ -1,0 +1,138 @@
+main {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1rem;
+  padding-top: 4rem;
+
+  h2 {
+    margin: 4vw;
+    font-size: 4rem;
+  }
+}
+
+#languages {
+  background-color: var(--purple6);
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+  align-items: center;
+  width: 80%;
+  margin-left: 10%;
+  border-radius: 20px;
+  height: 70rem;
+
+  h3 {
+    font-size: 2rem;
+    margin: 2rem;
+  }
+
+  hr {
+    width: 78%;
+    border: dashed var(--pureWhite) 2px;
+  }
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 2rem;
+  gap: 1rem;
+
+  h1 {
+    margin-left: 10px;
+  }
+
+  img {
+    width: 4rem;
+  }
+}
+
+button {
+  align-self: center;
+
+  a {
+    text-decoration: none;
+    color: var(--pureWhite);
+  }
+}
+
+#start_now {
+  margin-bottom: 5rem;
+}
+
+.languages_logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--purple5);
+  width: 20vw;
+  height: 40vh;
+  border-radius: 10px;
+  gap: 1rem;
+  position: relative;
+
+  p {
+    position: absolute;
+    bottom: 2rem;
+    font-size: 2rem;
+  }
+}
+
+.options {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.demonstration {
+  display: flex;
+  gap: 2rem;
+
+  img {
+    width: 90%;
+    margin: auto;
+    border-radius: 5px;
+  }
+}
+
+#text_2 {
+  margin: 2rem;
+}
+
+.text {
+  color: var(--pureWhite);
+}
+
+.ifrn_students {
+  background-color: var(--purple5);
+  width: 80vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 3rem;
+  border-radius: 15px;
+
+  img {
+    width: 20vw;
+    height: auto;
+  }
+
+  p {
+    line-height: 4rem;
+    font-size: 3rem;
+  }
+}
+
+footer {
+  margin-top: 15rem;
+  margin-bottom: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

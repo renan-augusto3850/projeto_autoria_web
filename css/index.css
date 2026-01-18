@@ -6,11 +6,19 @@
   --purple1: #532b88ff;
   --purple2: #9b72cfff;
   --purple3: #c8b1e4ff;
-  --purple4: #180C26;
-  --purple5: #2F184B;
-  --red1: #b22b26;
-  --green1: #5F9220;
+  --purple4: #8c49e5;
+  --purple5: #624f9d;
+  --purple6: #2f184bff;
+  --red: #b22b26;
+  --green: #5f9220;
   --green2: #00FF55;
+  --gradient1: #180c26;
+  --gradient2: #300c5a;
+  --gradient3: #320368;
+  --form: #3a1467;
+  --input-border: #8149cc;
+  --placeholder: #5e4646;
+  --button-hover: #6f36b9;
   --blue1: #6B94C4;
   --blue2: #84A7CE;
 }
@@ -22,47 +30,43 @@
   box-sizing: border-box;
 }
 
-html, body, main {
+html,
+body,
+main {
   width: 100%;
   height: max-content;
 }
 
-body, main {
+body,
+main {
   display: flex;
   flex-direction: column;
-  background-color: var(--purple4);
+  background-color: var(--gradient1);
   color: var(--pureWhite);
 }
 
 button {
-  background-color: #8c49e5;
+  background-color: var(--purple4);
   color: var(--pureWhite);
   border-radius: 9999px;
-  padding: 0.7rem 0.5rem;
+  padding:1rem 1.5rem;
   border: none;
   font-size: 1.2rem;
-  width: 8rem;
+  width: max-content;
   font-weight: bold;
   cursor: pointer;
   transition: background-color 0.1s;
 }
 
 button:hover {
-  background-color: #6f36b9;
+  background-color: var(--button-hover);
 }
 
 .transparent-button {
   display: flex;
   background-color: transparent;
   width: max-content;
-  border-radius: 0;
-  padding: 0;
-  transition: transform 0.2s ease-in-out;
-}
-
-.transparent-button:hover {
-  background-color: transparent;
-  transform: scale(1.2);
+  text-wrap: nowrap;
 }
 
 header {
@@ -80,7 +84,7 @@ header {
 
 #header.scrolled {
   background-color: rgba(0, 0, 0, 0.7);
-  color: #fff;
+  color: var(--pureWhite);
 }
 
 header > .user {
@@ -88,10 +92,46 @@ header > .user {
   right: 1rem;
 }
 
+button:hover {
+  background-color: var(--button-hover);
+}
+
+h1,
+h2,
+p {
+  color: var(--pureWhite);
+}
+
+#back-button {
+  background-color: transparent;
+  width: max-content;
+  border-radius: 0;
+  padding: 0;
+  transition: transform 0.2s ease-in-out;
+}
+
+#back-button:hover {
+  background-color: transparent;
+  transform: scale(1.2);
+}
+
+.transparent-button {
+  background-color: transparent;
+  width: max-content;
+  border-radius: 0;
+  padding: 0;
+  transition: transform 0.2s ease-in-out;
+}
+
+.transparent-button:hover {
+  background-color: transparent;
+  transform: scale(1.2);
+}
+
 article {
   display: flex;
   flex-direction: column;
-  background-color: var(--purple4);
+  background-color: var(--gradient1);
   color: var(--pureWhite);
   padding: 2rem;
 }
@@ -131,12 +171,15 @@ p {
   height: 6rem;
   max-width: 25rem;
 }
+
 .toast-error {
-  background-color: var(--red1);
+  background-color: var(--red);
 }
+
 .toast-correct {
-  background-color: var(--green1);
+  background-color: var(--green);
 }
+
 .toast-error.show {
   animation: shake 0.4s;
 }
@@ -158,10 +201,12 @@ p {
     transform: translateX(0);
   }
 }
+
 .toast-icon {
   width: 2.5rem;
   transform: translateY(8%);
 }
+
 .toast-wrapper {
   position: fixed;
   top: 1rem;

@@ -50,9 +50,10 @@ section:hover > span {
   display: block;
 }
 
-section:hover > div {
+.hover-section:hover > div {
   background-color: rgba(0, 0, 0, 0.5);
 }
+
 #exit_button {
   display: inline-block;
   position: absolute;
@@ -86,6 +87,7 @@ section:hover > div {
     p {
       position: absolute;
       font-size: 3rem;
+      line-height: unset;
       top: 13rem;
       left: 3rem;
     }
