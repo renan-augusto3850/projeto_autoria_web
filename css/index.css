@@ -10,6 +10,8 @@
   --purple5: #624f9d;
   --purple6: #2f184bff;
   --red: #b22b26;
+  --green: #5f9220;
+  --green2: #00FF55;
   --gradient1: #180c26;
   --gradient2: #300c5a;
   --gradient3: #320368;
@@ -129,7 +131,7 @@ p {
 article {
   display: flex;
   flex-direction: column;
-  background-color: var(--purple4);
+  background-color: var(--gradient1);
   color: var(--pureWhite);
   padding: 2rem;
 }
@@ -157,7 +159,8 @@ p {
   margin: 0.5rem;
 }
 
-.toast-error {
+.toast-error,
+.toast-correct {
   display: none;
   border-radius: 9999px;
   justify-content: center;
@@ -165,9 +168,16 @@ p {
   font-size: 1.5rem;
   gap: 0.8rem;
   padding: 0.2rem 1.5rem;
-  background-color: var(--red);
   height: 6rem;
   max-width: 25rem;
+}
+
+.toast-error {
+  background-color: var(--red);
+}
+
+.toast-correct {
+  background-color: var(--green);
 }
 
 .toast-error.show {
@@ -195,4 +205,11 @@ p {
 .toast-icon {
   width: 2.5rem;
   transform: translateY(8%);
+}
+
+.toast-wrapper {
+  position: fixed;
+  top: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
 }

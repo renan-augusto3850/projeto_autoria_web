@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/licao/html/licao.css">
+    <link rel="icon" href="/imgs/logo.svg" type="image/svg+xml" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="/js/router.js" defer></script>
+    <script src="/js/licao.js" defer></script>
+    <title>Conteúdos - HTML</title>
+</head>
+<body id="content">
+    <main>
+        <div class="view">
+            <div class="header">
+                <div class="nav">
+                    <button class="transparent-button" id="back_button">
+                        <img src="/imgs/arrow-left.svg" width="50" alt="Clique para voltar.">
+                    </button>
+
+                    <img src="/imgs/logo.svg" width="50">
+
+                    <h1>H1Learn</h1>
+                </div>
+            </div>
+
+            <div class="panels">
+                <div class="panel lesson" id="lesson-panel">
+                    <iframe id="lesson_iframe"></iframe>
+                </div>
+            </div>
+        <div class="manual">
+            <iframe id="pages"></iframe>
+        </div>
+        </div>
+    </main>
+</body>
+</html>
