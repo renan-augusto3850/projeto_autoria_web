@@ -6,17 +6,18 @@
     <title>Pagina Inicial</title>
     <link rel="stylesheet" href="css/index.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="/js/index.js" defer></script>
+    <script src="/js/router.js" defer></script>
   </head>
-  <body>
-    <header>
+  <body id="content">
+    <header id="header">
       <img src="/imgs/logo.svg" alt="logo do site" />
       <h1>H1 Learn</h1>
     </header>
     <main>
       <h2 class="text">O aprendizado começa aqui.</h2>
-      <button>
-        <a href="">Começe Hoje!</a>
-      </button>
+      <button id="start_now">Começe Hoje!</button>
       <section id="languages">
         <div>
           <h3 class="text">Aprenda</h3>
@@ -46,9 +47,7 @@
             class="img_demonstration"
           />
         </div>
-        <button>
-          <a href="">Começe Hoje!</a>
-        </button>
+        <button id="start_now_2">Começe Hoje!</button>
       </section>
     </main>
     <footer>

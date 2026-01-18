@@ -1,6 +1,10 @@
 ### Versão Alpha 0.0.1
-### Added: 
+
+### Added:
 
     - Adicionado index.html
-### Changes: 
-### Fixed: 
+    - Adicionado telas de cadastro, login e resetar senha
+
+### Changes:
+
+### Fixed:

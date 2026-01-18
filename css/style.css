@@ -4,6 +4,7 @@ main {
   text-align: center;
   font-weight: bold;
   font-size: 1rem;
+  padding-top: 4rem;
 
   h2 {
     margin: 4vw;
@@ -12,9 +13,10 @@ main {
 }
 
 #languages {
-  background-color: var(--purple5);
+  background-color: var(--purple6);
   display: flex;
   flex-direction: column;
+  gap: 3.2rem;
   align-items: center;
   width: 80%;
   margin-left: 10%;
@@ -28,7 +30,7 @@ main {
 
   hr {
     width: 78%;
-    border: dashed var(--white) 2px;
+    border: dashed var(--pureWhite) 2px;
   }
 }
 
@@ -49,7 +51,6 @@ header {
 }
 
 button {
-  margin: 10rem;
   align-self: center;
 
   a {
@@ -58,12 +59,16 @@ button {
   }
 }
 
+#start_now {
+  margin-bottom: 5rem;
+}
+
 .languages_logo {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: var(--purple6);
+  background-color: var(--purple5);
   width: 20vw;
   height: 40vh;
   border-radius: 10px;
@@ -83,6 +88,7 @@ button {
   justify-content: center;
   gap: 3rem;
 }
+
 .demonstration {
   display: flex;
   gap: 2rem;
@@ -103,7 +109,7 @@ button {
 }
 
 .ifrn_students {
-  background-color: var(--purple6);
+  background-color: var(--purple5);
   width: 80vw;
   display: flex;
   align-items: center;
