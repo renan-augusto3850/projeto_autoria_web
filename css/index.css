@@ -11,7 +11,7 @@
   --purple6: #2f184bff;
   --red: #b22b26;
   --green: #5f9220;
-  --green2: #00FF55;
+  --green2: #00ff55;
   --gradient1: #180c26;
   --gradient2: #300c5a;
   --gradient3: #320368;
@@ -19,8 +19,8 @@
   --input-border: #8149cc;
   --placeholder: #5e4646;
   --button-hover: #6f36b9;
-  --blue1: #6B94C4;
-  --blue2: #84A7CE;
+  --blue1: #6b94c4;
+  --blue2: #84a7ce;
 }
 
 * {
@@ -49,7 +49,7 @@ button {
   background-color: var(--purple4);
   color: var(--pureWhite);
   border-radius: 9999px;
-  padding:1rem 1.5rem;
+  padding: 1rem 1.5rem;
   border: none;
   font-size: 1.2rem;
   width: max-content;

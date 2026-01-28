@@ -1,33 +1,50 @@
 body {
-    overflow-x: hidden;
+  overflow-x: hidden;
 }
 
 h2 {
-    font-size: 4rem;
+  font-size: 4rem;
 }
 
 .useful-links {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-    margin: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin: 2rem 0;
 }
 
 ul {
-    margin-left: 2rem;
-    color: var(--blue1);
+  margin-left: 2rem;
+  color: var(--blue1);
 }
 
 .banner {
-    width: 100dvw;
-    margin: -2rem -2rem 0;
+  width: 100dvw;
+  margin: -2rem -2rem 0;
 }
 
 .banner > img {
-    width: 100%;
+  width: 100%;
 }
 
 .start-lesson-button {
-    align-self: center;
-    margin: 0.5rem;
+  align-self: center;
+  margin: 0.5rem;
+}
+
+@media screen and (max-width: 425px) {
+  #header {
+    h1 {
+      font-size: 1rem;
+    }
+
+    img {
+      width: 30px;
+    }
+    button {
+      img {
+        width: 20px;
+      }
+    }
+  }
 }

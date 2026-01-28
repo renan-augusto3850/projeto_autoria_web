@@ -18,10 +18,10 @@ main {
   flex-direction: column;
   gap: 3.2rem;
   align-items: center;
+  justify-content: center;
   width: 80%;
-  margin-left: 10%;
   border-radius: 20px;
-  height: 70rem;
+  margin: 0 auto;
 
   h3 {
     font-size: 2rem;
@@ -34,6 +34,9 @@ main {
   }
 }
 
+#start_now_2 {
+  padding: 1rem;
+}
 header {
   display: flex;
   align-items: center;
@@ -83,6 +86,7 @@ button {
 }
 
 .options {
+  align-self: center;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -128,11 +132,53 @@ button {
     font-size: 3rem;
   }
 }
-
 footer {
   margin-top: 15rem;
   margin-bottom: 5rem;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@media screen and (max-width: 425px) {
+  .ifrn_students {
+    height: 18rem;
+    p {
+      font-size: 0.8rem;
+      line-height: 28px;
+    }
+    img {
+      width: 5rem;
+    }
+  }
+  #languages {
+    height: 115rem;
+    p {
+      font-size: 1.5rem;
+    }
+  }
+  main {
+    h2 {
+      margin-top: 3rem;
+      font-size: 3rem;
+    }
+  }
+  .languages_logo {
+    width: 40vw;
+    height: 30vh;
+    p {
+      bottom: 0rem;
+    }
+  }
+
+  .options,
+  .demonstration {
+    display: flex;
+    flex-direction: column;
+  }
+  .demonstration {
+    img {
+      width: 13rem;
+    }
+  }
 }
