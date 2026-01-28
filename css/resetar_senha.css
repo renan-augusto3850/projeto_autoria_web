@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap");
+
+body {
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+    to bottom right,
+    var(--gradient1),
+    var(--gradient2),
+    var(--gradient3)
+  );
+}
+
+main {
+  position: relative;
+  width: max-content;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+#logo {
+  width: 4rem;
+  cursor: pointer;
+}
+
+#toast-notification {
+  display: none;
+  border-radius: 9999px;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0 1.5rem;
+  background-color: var(--white);
+  height: 4rem;
+  width: 22rem;
+  position: absolute;
+  top: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#toast-notification p {
+  color: black;
+  font-size: 1rem;
+}
+
+#toast-notification img {
+  width: 4rem;
+}
+
+h1 {
+  font-size: 2rem;
+  font-family: "Source Code Pro";
+  font-weight: 600;
+  letter-spacing: 0.5rem;
+}
+
+form {
+  background-color: var(--form);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem 2rem 3rem 2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 28rem;
+}
+
+form button {
+  margin-top: 2rem;
+}
+
+.user-email {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  width: 100%;
+}
+
+#user_logo {
+  width: 6rem;
+}
+
+input {
+  border-radius: 8px;
+  width: 100%;
+  border: 3px solid var(--input-border);
+  outline: none;
+  padding: 0.6rem;
+  background-color: var(--white);
+}
+
+input::placeholder {
+  color: var(--placeholder);
+}
+
+.email-container {
+  position: relative;
+  width: 70%;
+  display: flex;
+}
+
+.email-container span {
+  position: absolute;
+  right: 0.5rem;
+  top: 50%;
+  transform: translateY(-45%);
+}
+
+a {
+  text-decoration: none;
+  color: var(--login-link);
+}
+
+.toast-wrapper {
+  position: fixed;
+  top: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+input.input-error {
+  border-color: var(--red);
+}

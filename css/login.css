@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap");
+
+body {
+  height: 100dvh;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+
+.left {
+  background-image: url("/imgs/bubbles.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+
+.right {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+    to bottom right,
+    var(--gradient1),
+    var(--gradient2),
+    var(--gradient3)
+  );
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+}
+
+#logo {
+  width: 12rem;
+  cursor: pointer;
+}
+
+#ifrn {
+  width: 70%;
+}
+
+h1 {
+  font-size: 4rem;
+  font-family: "Source Code Pro";
+  font-weight: 600;
+  margin: auto;
+  line-height: unset !important;
+  letter-spacing: 0.5rem;
+}
+
+p {
+  display: flex;
+}
+
+a {
+  margin-left: 0.2rem;
+}
+
+.subtitle {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+form {
+  background-color: var(--form);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 70%;
+}
+
+#user_logo {
+  width: 6rem;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  gap: 1rem;
+}
+
+.inputs input {
+  width: 100%;
+  border-radius: 8px;
+  border: 3px solid var(--input-border);
+  outline: none;
+  padding: 0.7rem;
+  background-color: var(--white);
+}
+
+.inputs input::placeholder {
+  color: var(--placeholder);
+}
+
+.email-container,
+.password-container {
+  position: relative;
+}
+
+.email-container span,
+.password-container span {
+  position: absolute;
+  right: 0.5rem;
+  top: 50%;
+  transform: translateY(-45%);
+  z-index: 1;
+}
+
+.password-container span {
+  cursor: pointer;
+}
+
+.password-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+#forgot-password {
+  text-align: end;
+}
+
+a {
+  text-decoration: none;
+  color: var(--blue1);
+  margin-left: 0.2rem;
+}
+
+.ifrn_students {
+  background-color: var(--purple5);
+  width: 40vw;
+  height: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 3rem;
+  border-radius: 15px;
+
+  img {
+    width: 6vw;
+    height: auto;
+  }
+
+  p {
+    font-size: large;
+    font-weight: bold;
+  }
+}
+
+#hide-password,
+#hide-confirm-password {
+  display: none;
+}
+
+.toast-wrapper {
+  position: fixed;
+  top: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+input.input-error {
+  border-color: var(--red);
+}

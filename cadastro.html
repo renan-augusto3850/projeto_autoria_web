@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/index.css" />
+    <link rel="stylesheet" href="/css/cadastro.css" />
+    <script src="/js/cadastro.js" defer></script>
+    <link rel="icon" href="/imgs/logo.svg" type="image/svg+xml" />
+    <title>Cadastro</title>
+  </head>
+  <body>
+    <div class="toast-wrapper">
+      <div class="toast-error" id="toast-error">
+        <span
+          ><img src="/imgs/x-error.svg" alt="ícone de erro" class="toast-icon"
+        /></span>
+        <p>Texto</p>
+      </div>
+    </div>
+    <main>
+      <div class="left">
+        <div class="logo-container">
+          <a class="logo" href="index.html"><img id="logo" src="/imgs/logo.svg" alt="Logo"
+          /></a>
+          <h1>H1Learn</h1>
+          <p class="subtitle">
+            o aprendizado começa<br />
+            aqui.
+          </p>
+        </div>
+
+      <div class="ifrn_students">
+        <img src="/imgs/campus.svg" />
+        <p>
+          Criado por alunos do Instituto Federal de Ciências, Tecnologia e
+          Inovação do Rio Grande do Norte, campus Pau dos Ferros.
+        </p>
+      </div>
+      </div>
+
+      <div class="right">
+        <form id="form">
+          <img
+            id="user_logo"
+            src="/imgs/user.svg"
+            alt="Imagem de perfil do usuário"
+            loading="lazy"
+          />
+
+          <div class="inputs">
+            <div class="username-container">
+              <input
+                type="text"
+                placeholder="Seu nome:"
+                name="username"
+                id="username"
+                maxlength="12"
+              />
+              <span
+                ><img
+                  src="/imgs/username.svg"
+                  alt="Ícone de usuário"
+                  loading="lazy"
+              /></span>
+            </div>
+
+            <div class="email-container">
+              <input
+                type="email"
+                placeholder="Email:"
+                name="email"
+                id="email"
+              />
+
+              <span
+                ><img src="/imgs/email.svg" alt="Ícone de email" loading="lazy"
+              /></span>
+            </div>
+
+            <div class="password-inputs-container">
+              <div class="password-container">
+                <input
+                  type="password"
+                  placeholder="Senha:"
+                  name="password"
+                  id="password"
+                  maxlength="12"
+                />
+
+                <span id="eye-span-1"
+                  ><img
+                    id="eye-password"
+                    src="/imgs/password-visible.svg"
+                    alt="Ícone de visualizar senha"
+                    loading="lazy"
+                  />
+                  <img
+                    id="hide-password"
+                    src="/imgs/password-hidden.svg"
+                    alt="Ícone de esconder senha"
+                    loading="lazy"
+                  />
+                </span>
+              </div>
+
+              <div class="confirm-password-container">
+                <input
+                  type="password"
+                  placeholder="Repetir a senha:"
+                  name="confirm-password"
+                  id="confirm-password"
+                  maxlength="12"
+                />
+
+                <span id="eye-span-2"
+                  ><img
+                    id="eye-confirm-password"
+                    src="/imgs/password-visible.svg"
+                    alt="Ícone de visualizar senha"
+                    loading="lazy" />
+
+                  <img
+                    id="hide-confirm-password"
+                    src="/imgs/password-hidden.svg"
+                    alt="Ícone de esconder senha"
+                    loading="lazy"
+                /></span>
+              </div>
+            </div>
+          </div>
+
+          <button type="submit">Cadastrar</button>
+
+          <p>
+            Caso já tenha uma conta, <a href="login.html">faça login aqui</a>.
+          </p>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>

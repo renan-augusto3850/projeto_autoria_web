@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pagina Inicial</title>
+    <link rel="stylesheet" href="/css/index.css" />
+    <link rel="stylesheet" href="/css/escrever.css" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/highlightjs.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script src="/js/router.js" defer></script>
+  </head>
+  <body id="content">
+    <main>
+      <div class="toast-wrapper">
+        <div class="toast-error" id="toast-error">
+          <span
+            ><img src="/imgs/x-error.svg" alt="ícone de erro" class="toast-icon"
+          /></span>
+          <p></p>
+        </div>
+      </div>
+      <div class="toast-wrapper">
+        <div class="toast-correct" id="toast-correct">
+          <span
+            ><img src="/imgs/check.svg" alt="ícone de acert" class="toast-icon"
+          /></span>
+          <p></p>
+        </div>
+      </div>
+      <section id="lesson">
+        <h2>Complete o trecho de código:</h2>
+        <p>Inclua o CSS contido em /css/styles.css.</p>
+        <form>
+          <div id="question">
+            <div id="awser">
+              <div class="code">
+                <pre><code class="language-html"> &lt;!DOCTYPE html &gt;</code></pre>
+                <pre><code class="language-html" >  &lt;header&gt;</code></pre>
+              </div>
+              <input type="text" id="awser_input">
+              <div class="code">
+                <pre><code class="language-html"> &lt;/header&gt;</code></pre>
+                <pre><code class="language-html">&lt;body &gt;</code></pre>
+              </div>
+            </div>
+          </div>
+          </div>
+        </form>
+            <div id="bnt_div">
+              <button id="bnt" type="submit" >Confirmar</button>
+            </div>
+      </section>
+    </main>
+
+    <script>
+      hljs.highlightAll();
+    </script>
+    <script src="/js/licao_escrever_html.js"></script>
+  </body>
+</html>

@@ -1,0 +1,36 @@
+:root {
+    --pageBackground: #fff;
+}
+
+.page {
+    background-color: var(--pageBackground);
+    padding: 1rem;
+    height: 100%;
+}
+
+.controls {
+    position: fixed;
+    display: flex;
+    gap: 1rem;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    height: max-content;
+}
+
+.controls > button {
+  background-color: #8c49e5;
+  color: #fff;
+  border-radius: 9999px;
+  padding: 0.7rem 0.5rem;
+  border: none;
+  font-size: 1.2rem;
+  width: 8rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.1s;
+
+    &:hover {
+        background-color: #6f36b9;
+    }
+}
