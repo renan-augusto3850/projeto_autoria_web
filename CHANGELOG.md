@@ -4,6 +4,7 @@
 
     - Adicionado index.html
     - Adicionado telas de cadastro, login e resetar senha
+    - Adicionado responsividade das telas de cadastro, login e resetar senha
 
 ### Changes:
 

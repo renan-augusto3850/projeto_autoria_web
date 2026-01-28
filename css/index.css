@@ -1,132 +1,132 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
 
 :root {
-  --pureWhite: #fff;
-  --white: #f4effaff;
-  --backgroundColor: #2f184bff;
-  --purple1: #532b88ff;
-  --purple2: #9b72cfff;
-  --purple3: #c8b1e4ff;
-  --red: #b22b26;
-  --gradient1: #180c26;
-  --gradient2: #300c5a;
-  --gradient3: #320368;
-  --form: #3a1467;
-  --input-border: #8149cc;
-  --placeholder: #5e4646;
-  --login-link: #8c49e5;
-  --button-hover: #6f36b9;
+    --pureWhite: #fff;
+    --white: #f4effaff;
+    --backgroundColor: #2f184bff;
+    --purple1: #532b88ff;
+    --purple2: #9b72cfff;
+    --purple3: #c8b1e4ff;
+    --red: #b22b26;
+    --gradient1: #180c26;
+    --gradient2: #300c5a;
+    --gradient3: #320368;
+    --form: #3a1467;
+    --input-border: #8149cc;
+    --placeholder: #5e4646;
+    --login-link: #8c49e5;
+    --button-hover: #6f36b9;
 }
 
 * {
-  margin: 0;
-  padding: 0;
-  font-family: "Nunito Sans";
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Nunito Sans";
+    box-sizing: border-box;
 }
 
 body {
-  background-color: var(--backgroundColor);
+    background-color: var(--backgroundColor);
 }
 
 button {
-  color: var(--pureWhite);
-  background-color: var(--login-link);
-  border-radius: 9999px;
-  padding: 0.7rem 0.5rem;
-  border: none;
-  font-size: 1.2rem;
-  width: 8rem;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background-color 0.1s;
+    color: var(--pureWhite);
+    background-color: var(--login-link);
+    border-radius: 9999px;
+    padding: 0.7rem 0.5rem;
+    border: none;
+    font-size: 1.2rem;
+    width: 8rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.1s;
 }
 
 header {
-  display: flex;
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100dvw;
-  align-items: center;
-  padding: 1rem;
-  gap: 0.5rem;
-  z-index: 1;
-  transition: background 0.2s ease-in-out;
+    display: flex;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100dvw;
+    align-items: center;
+    padding: 1rem;
+    gap: 0.5rem;
+    z-index: 1;
+    transition: background 0.2s ease-in-out;
 }
 
 button:hover {
-  background-color: var(--button-hover);
+    background-color: var(--button-hover);
 }
 
 h1,
 h2,
 p {
-  color: var(--pureWhite);
+    color: var(--pureWhite);
 }
 
 #back-button {
-  background-color: transparent;
-  width: max-content;
-  border-radius: 0;
-  padding: 0;
-  transition: transform 0.2s ease-in-out;
+    background-color: transparent;
+    width: max-content;
+    border-radius: 0;
+    padding: 0;
+    transition: transform 0.2s ease-in-out;
 }
 
 #back-button:hover {
-  background-color: transparent;
-  transform: scale(1.2);
+    background-color: transparent;
+    transform: scale(1.2);
 }
 
 .transparent-button {
-  background-color: transparent;
-  width: max-content;
-  border-radius: 0;
-  padding: 0;
-  transition: transform 0.2s ease-in-out;
+    background-color: transparent;
+    width: max-content;
+    border-radius: 0;
+    padding: 0;
+    transition: transform 0.2s ease-in-out;
 }
 
 .transparent-button:hover {
-  background-color: transparent;
-  transform: scale(1.2);
+    background-color: transparent;
+    transform: scale(1.2);
 }
 
 .toast-error {
-  display: none;
-  border-radius: 9999px;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.5rem;
-  gap: 0.8rem;
-  padding: 0.2rem 1.5rem;
-  background-color: var(--red);
-  height: 6rem;
-  max-width: 25rem;
+    display: none;
+    border-radius: 9999px;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    gap: 0.8rem;
+    padding: 0.2rem 1.5rem;
+    background-color: var(--red);
+    height: 6rem;
+    max-width: 25rem;
 }
 
 .toast-error.show {
-  animation: shake 0.4s;
+    animation: shake 0.4s;
 }
 
 @keyframes shake {
-  0% {
-    transform: translateX(0);
-  }
-  25% {
-    transform: translateX(-12px);
-  }
-  50% {
-    transform: translateX(12px);
-  }
-  75% {
-    transform: translateX(-12px);
-  }
-  100% {
-    transform: translateX(0);
-  }
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-12px);
+    }
+    50% {
+        transform: translateX(12px);
+    }
+    75% {
+        transform: translateX(-12px);
+    }
+    100% {
+        transform: translateX(0);
+    }
 }
 
 .toast-icon {
-  width: 2.5rem;
-  transform: translateY(8%);
+    width: 2.5rem;
+    transform: translateY(8%);
 }

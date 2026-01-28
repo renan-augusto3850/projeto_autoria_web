@@ -1,143 +1,243 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap");
 
+header {
+    display: none;
+}
+
 body {
-  height: 100dvh;
+    height: 100dvh;
 }
 
 main {
-  display: flex;
-  height: 100%;
+    display: flex;
+    height: 100%;
 }
 
 .left {
-  background-image: url("/imgs/bubbles.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  text-align: center;
+    background-image: url("/imgs/bubbles.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
 }
 
 .right {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background: linear-gradient(
-    to bottom right,
-    var(--gradient1),
-    var(--gradient2),
-    var(--gradient3)
-  );
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(
+        to bottom right,
+        var(--gradient1),
+        var(--gradient2),
+        var(--gradient3)
+    );
 }
 
 #logo {
-  width: 12rem;
-  cursor: pointer;
+    width: 12rem;
+    cursor: pointer;
 }
 
 #ifrn {
-  width: 70%;
+    width: 70%;
 }
 
 h1 {
-  font-size: 4rem;
-  font-family: "Source Code Pro";
-  font-weight: 600;
-  letter-spacing: 0.5rem;
+    font-size: 4rem;
+    font-family: "Source Code Pro";
+    font-weight: 600;
+    letter-spacing: 0.5rem;
 }
 
 .subtitle {
-  font-size: 2rem;
-  font-weight: bold;
+    font-size: 2rem;
+    font-weight: bold;
 }
 
 form {
-  background-color: var(--form);
-  border-radius: 8px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2rem;
-  padding: 2rem;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  width: 70%;
+    background-color: var(--form);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 70%;
+    min-width: 500px;
 }
 
 #user_logo {
-  width: 6rem;
+    width: 6rem;
 }
 
 .inputs {
-  display: flex;
-  flex-direction: column;
-  width: 70%;
-  gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    gap: 1rem;
 }
 
 .inputs input {
-  width: 100%;
-  border-radius: 8px;
-  border: 3px solid var(--input-border);
-  outline: none;
-  padding: 0.7rem;
-  background-color: var(--white);
+    width: 100%;
+    border-radius: 8px;
+    border: 3px solid var(--input-border);
+    outline: none;
+    padding: 0.7rem;
+    background-color: var(--white);
 }
 
 .inputs input::placeholder {
-  color: var(--placeholder);
+    color: var(--placeholder);
 }
 
 .email-container,
 .password-container {
-  position: relative;
+    position: relative;
 }
 
 .email-container span,
 .password-container span {
-  position: absolute;
-  right: 0.5rem;
-  top: 50%;
-  transform: translateY(-45%);
-  z-index: 1;
+    position: absolute;
+    right: 0.5rem;
+    top: 50%;
+    transform: translateY(-45%);
+    z-index: 1;
 }
 
 .password-container span {
-  cursor: pointer;
+    cursor: pointer;
 }
 
 .password-wrapper {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
 }
 
 #forgot-password {
-  text-align: end;
+    text-align: end;
 }
 
 a {
-  text-decoration: none;
-  color: var(--login-link);
+    text-decoration: none;
+    color: var(--login-link);
 }
 
 #hide-password,
 #hide-confirm-password {
-  display: none;
+    display: none;
 }
 
 .toast-wrapper {
-  position: fixed;
-  top: 1rem;
-  left: 50%;
-  transform: translateX(-50%);
+    position: fixed;
+    top: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 input.input-error {
-  border-color: var(--red);
+    border-color: var(--red);
+}
+
+@media (max-width: 1080px) {
+    form {
+        width: 90%;
+        min-width: auto;
+    }
+
+    #ifrn {
+        width: 90%;
+        min-width: auto;
+    }
+
+    .inputs {
+        width: 300px;
+    }
+}
+
+@media (max-width: 810px) {
+    .left {
+        display: none;
+    }
+
+    .right {
+        width: 100%;
+    }
+
+    form {
+        width: 32rem;
+        height: 32rem;
+    }
+
+    .inputs {
+        width: 70%;
+    }
+
+    header {
+        display: flex;
+    }
+
+    #logo-header {
+        width: 5rem;
+        cursor: pointer;
+    }
+
+    h2 {
+        font-size: 2rem;
+        font-family: "Source Code Pro";
+        font-weight: 600;
+        letter-spacing: 0.5rem;
+    }
+}
+
+@media (max-width: 518px) {
+    form {
+        min-height: 100dvh;
+        width: 100%;
+        padding: 8rem 1rem 1rem 1rem;
+        gap: 6rem;
+    }
+
+    .inputs {
+        gap: 2rem;
+        width: 90%;
+    }
+
+    .inputs input {
+        padding: 0.9rem;
+    }
+
+    .password-inputs-container {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    button {
+        width: 9rem;
+        height: 3.5rem;
+        font-size: 1.4rem;
+    }
+
+    form p {
+        font-size: 1.1rem;
+    }
+
+    .toast-wrapper,
+    .toast-notification {
+        z-index: 1;
+    }
+
+    .toast-error {
+        font-size: 1.2rem;
+        height: 5rem;
+        padding: 3rem 1.5rem;
+    }
 }

@@ -1,130 +1,159 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap");
 
 body {
-  height: 100dvh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background: linear-gradient(
-    to bottom right,
-    var(--gradient1),
-    var(--gradient2),
-    var(--gradient3)
-  );
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(
+        to bottom right,
+        var(--gradient1),
+        var(--gradient2),
+        var(--gradient3)
+    );
 }
 
 main {
-  position: relative;
+    position: relative;
 }
 
 p {
-  font-size: 1.5rem;
+    font-size: 1.5rem;
 }
 
 #logo {
-  width: 5rem;
-  cursor: pointer;
+    width: 5rem;
+    cursor: pointer;
 }
 
 #toast-notification {
-  display: none;
-  border-radius: 9999px;
-  justify-content: center;
-  align-items: center;
-  gap: 0.5rem;
-  padding: 0 1.5rem;
-  background-color: var(--white);
-  height: 4rem;
-  width: 22rem;
-  position: absolute;
-  top: 1rem;
-  left: 50%;
-  transform: translateX(-50%);
+    display: none;
+    border-radius: 9999px;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0 1.5rem;
+    background-color: var(--white);
+    height: 4rem;
+    width: 22rem;
+    position: absolute;
+    top: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 #toast-notification p {
-  color: black;
-  font-size: 1rem;
+    color: black;
+    font-size: 1rem;
 }
 
 #toast-notification img {
-  width: 4rem;
+    width: 4rem;
 }
 
 h1 {
-  font-size: 2rem;
-  font-family: "Source Code Pro";
-  font-weight: 600;
-  letter-spacing: 0.5rem;
+    font-size: 2rem;
+    font-family: "Source Code Pro";
+    font-weight: 600;
+    letter-spacing: 0.5rem;
 }
 
 form {
-  background-color: var(--form);
-  border-radius: 8px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2rem;
-  padding: 2rem 2rem 3rem 2rem;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  width: 28rem;
+    background-color: var(--form);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem 2rem 3rem 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 28rem;
 }
 
 form button {
-  margin-top: 2rem;
+    margin-top: 2rem;
 }
 
 .user-email {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  align-items: center;
-  width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    width: 100%;
 }
 
 #user_logo {
-  width: 6rem;
+    width: 6rem;
 }
 
 input {
-  border-radius: 8px;
-  width: 100%;
-  border: 3px solid var(--input-border);
-  outline: none;
-  padding: 0.6rem;
-  background-color: var(--white);
+    border-radius: 8px;
+    width: 100%;
+    border: 3px solid var(--input-border);
+    outline: none;
+    padding: 0.6rem;
+    background-color: var(--white);
 }
 
 input::placeholder {
-  color: var(--placeholder);
+    color: var(--placeholder);
 }
 
 .email-container {
-  position: relative;
-  width: 70%;
-  display: flex;
+    position: relative;
+    width: 70%;
+    display: flex;
 }
 
 .email-container span {
-  position: absolute;
-  right: 0.5rem;
-  top: 50%;
-  transform: translateY(-45%);
+    position: absolute;
+    right: 0.5rem;
+    top: 50%;
+    transform: translateY(-45%);
 }
 
 a {
-  text-decoration: none;
-  color: var(--login-link);
+    text-decoration: none;
+    color: var(--login-link);
 }
 
 .toast-wrapper {
-  position: fixed;
-  top: 1rem;
-  left: 50%;
-  transform: translateX(-50%);
+    position: fixed;
+    top: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 input.input-error {
-  border-color: var(--red);
+    border-color: var(--red);
+}
+
+@media (max-width: 518px) {
+    form {
+        min-height: 100dvh;
+        width: 100%;
+        padding: 12rem 1rem 1rem 1rem;
+        gap: 4rem;
+    }
+
+    main {
+        width: 100%;
+    }
+
+    .toast-wrapper,
+    #toast-notification {
+        z-index: 1;
+    }
+
+    #toast-notification {
+        top: 3rem;
+        padding: 0.5rem 1.5rem;
+    }
+
+    .toast-error {
+        font-size: 1.2rem;
+        height: 5rem;
+        padding: 3rem 1.5rem;
+    }
 }
