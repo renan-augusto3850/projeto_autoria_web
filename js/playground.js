@@ -360,3 +360,85 @@ finish_button.addEventListener('click', () => {
 back_button.addEventListener('click', () => {
   window.history.back();
 });
+
+let is_open = false
+
+function close_manual_f() {
+  manual.style.transform = "translateX(100%)"
+  open_manual.style.transform = "translateX(0px)"
+  back_wrapper.style.display = 'none'
+  open_manual.innerText = "<<"
+}
+
+function open_manual_f() {
+  manual.style.transform = "translateX(0%)"
+  open_manual.style.transform = "translateX(-300px)"
+  back_wrapper.style.display = 'block'
+  open_manual.innerText = ">>"
+}
+
+function manual_normal_state() {
+  manual.style.transform = "translateX(0%)"
+    open_manual.style.transform = "translateX(0px)"
+    back_wrapper.style.display = 'none'
+    is_open = false
+}
+
+open_manual.addEventListener("click", () => {
+  if (is_open) {
+    close_manual_f()
+  } else {
+    open_manual_f()
+  }
+  is_open = !is_open
+})
+
+back_wrapper.addEventListener("click", () => {
+  close_manual_f()
+})
+
+window.addEventListener("resize", () => {
+  if (window.innerWidth > 768) {
+    manual_normal_state()
+  } else {
+    close_manual_f()
+  }
+})
+
+let tabs_open = false
+
+function close_tabs() {
+  tabs.classList.add("animate-tabs-close")
+
+  tabs_open = false
+
+  close_icon.style.display = "none"
+  open_icon.style.display = "block"
+
+  back_wrapper.style.display = "none"
+}
+
+function open_tabs() {
+    tabs.classList.add("animate-tabs-open")
+
+  tabs_open = true
+
+  close_icon.style.display = "block"
+  open_icon.style.display = "none"
+
+  back_wrapper.style.display = "block"
+}
+
+show_tabs.addEventListener("click", () => {
+  if (tabs_open) { close_tabs() } else { open_tabs() }
+})
+
+tabs.addEventListener('animationend', () => {
+  if (!tabs_open) {
+    tabs.classList.remove("animate-tabs-open", "animate-tabs-close")
+  }
+});
+
+back_wrapper.addEventListener("click", () => {
+  if (tabs_open) { close_tabs() } else { close_manual_f() }
+})

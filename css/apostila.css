@@ -25,9 +25,11 @@ button {
 }
 
 .controls {
+  position: fixed;
+  bottom: 0;
   display: flex;
   gap: 1rem;
-  height: max-content;
+  width: max-content;
 }
 
 .controls > button {
@@ -37,7 +39,7 @@ button {
   padding: 0.7rem 0.5rem;
   border: none;
   font-size: 1.2rem;
-  width: 8rem;
+  width: 5.2rem;
   font-weight: bold;
   cursor: pointer;
   transition: background-color 0.1s;

@@ -9,6 +9,9 @@ main {
     border-radius: 0;
     margin-top: -22px;
     background-color: var(--pureWhite);
+    z-index: 2;
+    transform: translateX(0%);
+    transition: transform 0.5s ease-in-out;
 }
 
 .manual > iframe {
@@ -21,6 +24,143 @@ main {
     display: flex;
     width: 100%;
     height: 44%;
+}
+
+@keyframes tabs-open {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -170%);
+  }
+  50% {
+    opacity: 1;
+    transform: translate(-50%, -130%);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -120%);
+  }
+}
+
+@keyframes tabs-close {
+  0% {
+    opacity: 1;
+    transform: translate(-50%, -120%);
+  }
+  50% {
+    opacity: 0.2;
+    transform: translate(-50%, -140%);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -170%);
+    display: none;
+  }
+}
+
+.animate-tabs-open {
+    display: block !important;
+    animation: tabs-open 0.5s forwards;
+}
+
+.animate-tabs-close {
+    animation: tabs-close 0.5s forwards;
+}
+
+@media (max-width: 768px) {
+    .manual {
+        position: fixed;
+        right: 0;
+        transform: translateX(100%);
+    }
+
+    .manual > iframe {
+        height: 92dvh;
+    }
+
+    .open-manual {
+        display: block !important;
+    }
+
+    .tab {
+        padding: 8px 16px !important;
+    }
+
+    .view {
+        height: 100dvh !important;
+    }
+
+    .result > iframe, .panel > div {
+        height: 98dvh !important;
+    }
+}
+
+@media (max-width: 412px) {
+    #show_tabs {
+        display: block !important;
+    }
+
+    .tabs :nth-child(1 of .tab) {
+        border-radius: 16px 0 0 16px !important;
+    }
+
+    .tabs :last-child {
+        border-radius: 0 16px 16px 0 !important;
+    }
+
+    .tabs {
+        position: fixed;
+        display: none;
+        opacity: 0.2;
+        width: max-content !important;
+        padding: 1rem 2rem;
+        background-color: var(--gradient1);
+        border-radius: 99px;
+        z-index: 0;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, -120%);
+    }
+}
+
+#show_tabs {
+    display: none;
+    background-color: transparent;
+    font-size: 2rem;
+    font-weight: 300;
+    transform: translateX(10%);
+
+    #close_icon {
+        display: none;
+    }
+
+    .icons > img {
+        width: 2rem;
+        margin-top: 1rem;
+    }
+}
+
+.open-manual {
+    display: none;
+    z-index: 2;
+    position: fixed;
+    top: 30%;
+    right: 0;
+    background-color: var(--purple6);
+    width: 4rem;
+    padding: 2px 2px 4px !important;
+    height: 3rem;
+    border-radius: 4px 0 0 4px;
+    transition: transform 0.5s ease-in-out;
+}
+
+#back_wrapper {
+    display: none;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100dvw;
+    height: 100dvh;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .tab {
@@ -43,7 +183,7 @@ main {
 .header {
     display: flex;
     position: fixed;
-    z-index: 1;
+    z-index: 2;
     left: 0;
     top: 0;
     background-color: var(--purple6);

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/index.css">
-    <link rel="stylesheet" href="/css/licao/html/licao.css">
+    <link rel="stylesheet" href="/css/licao/licao.css">
     <link rel="icon" href="/imgs/logo.svg" type="image/svg+xml" />
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="/js/router.js" defer></script>
@@ -31,10 +31,49 @@
                     <iframe id="lesson_iframe"></iframe>
                 </div>
             </div>
-        <div class="manual">
+        <div class="manual" id="manual">
             <iframe id="pages"></iframe>
         </div>
         </div>
     </main>
+    <div id="back_wrapper"></div>
+        <button class="open-manual" id="open_manual">
+            &lt;&lt;
+        </button>
 </body>
 </html>
+<script>
+    let is_open = false
+
+    function close_manual_f() {
+        manual.style.transform = "translateX(100%)"
+        open_manual.style.transform = "translateX(0px)"
+
+        back_wrapper.style.display = 'none'
+
+        open_manual.innerText = "<<"
+    }
+
+    function open_manual_f() {
+        manual.style.transform = "translateX(0%)"
+        open_manual.style.transform = "translateX(-300px)"
+
+        back_wrapper.style.display = 'block'
+
+        open_manual.innerText = ">>"
+    }
+
+    open_manual.addEventListener("click", () => {
+        if (is_open) {
+            close_manual_f()
+        } else {
+            open_manual_f()
+        }
+
+        is_open = !is_open
+    })
+
+    back_wrapper.addEventListener("click", () => {
+        close_manual_f()
+    })
+</script>

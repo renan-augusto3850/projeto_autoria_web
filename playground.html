@@ -15,7 +15,7 @@
 </head>
 <body id="content">
     <main>
-        <div class="view">
+        <div class="view" id="view">
             <input id="html-radio" name="group" type="radio" checked>
             <input id="css-radio" name="group" type="radio">
             <input id="js-radio" name="group" type="radio">
@@ -30,7 +30,16 @@
                     <img src="/imgs/logo.svg" width="50">
                 </div>
 
-                <div class="tabs">
+                <button id="show_tabs">
+                    <div class="icons" id="open_icon">
+                        <img src="/imgs/chevrons-down.svg" alt="Setas para baixo.">
+                    </div>
+                    <div class="icons" id="close_icon">
+                        <img src="/imgs/chevrons-up.svg" alt="Setas para cima.">
+                    </div>
+                </button>
+
+                <div class="tabs" id="tabs">
                     <label class="tab" id="html-tab" for="html-radio">.html</label>
                     <label class="tab" id="css-tab" for="css-radio">.css</label>
                     <label class="tab" id="js-tab" for="js-radio">.js</label>
@@ -59,10 +68,14 @@
                     <iframe id="result_iframe"></iframe>
                 </div>
             </div>
-        <div class="manual">
+        <div class="manual" id="manual">
             <iframe id="pages"></iframe>
         </div>
         </div>
     </main>
+    <div id="back_wrapper"></div>
+        <button class="open-manual" id="open_manual">
+            &lt;&lt;
+        </button>
 </body>
 </html>
