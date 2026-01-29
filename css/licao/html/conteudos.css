@@ -64,8 +64,6 @@ section:hover > span {
 .toast {
   position: relative;
   backdrop-filter: blur(8px);
-  width: 70vw;
-  height: 70vh;
   position: fixed;
   display: none;
   align-items: center;
@@ -106,5 +104,58 @@ section:hover > span {
   }
   p {
     font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #exit_button {
+    img {
+      width: 50px;
+    }
+  }
+  .toast {
+    h2 {
+      font-size: 1.2rem;
+    }
+    p {
+      font-size: 1rem;
+    }
+    section {
+      padding-top: 1.4rem;
+    }
+  }
+}
+
+@media screen and (max-width: 425px) {
+  #exit_button {
+    img {
+      width: 30px;
+    }
+  }
+  .toast {
+    top: 40%;
+    width: 70vw;
+    height: 60vh;
+    margin-bottom: 40rem;
+    h2 {
+      font-size: 1.2rem;
+    }
+    p {
+      font-size: 1rem;
+    }
+    section {
+      padding-top: 1.4rem;
+    }
+  }
+  .contents {
+    padding-top: 2rem;
+  }
+  header {
+    img {
+      width: 40px;
+    }
+  }
+  .transparent-button user {
+    width: 50px;
   }
 }
