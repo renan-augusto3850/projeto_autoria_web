@@ -1,0 +1,65 @@
+:root {
+  --pageBackground: #fdfdfd;
+  --pureWhite: #fff;
+  --white: #f4effaff;
+  --purple1: #532b88ff;
+  --purple2: #9b72cfff;
+  --purple3: #c8b1e4ff;
+  --purple4: #180C26;
+  --purple5: #2F184B;
+  --red1: #b22b26;
+  --green1: #5F9220;
+  --green2: #00FF55;
+  --blue1: #6B94C4;
+  --blue2: #84A7CE;
+}
+
+* {
+  margin-bottom: 0;
+  box-sizing: border-box;
+}
+
+button {
+  display: flex;
+  justify-content: center;
+}
+
+.controls {
+  display: flex;
+  gap: 1rem;
+  height: max-content;
+}
+
+.controls > button {
+  background-color: #8c49e5;
+  color: #fff;
+  border-radius: 9999px;
+  padding: 0.7rem 0.5rem;
+  border: none;
+  font-size: 1.2rem;
+  width: 8rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.1s;
+
+  &:hover {
+    background-color: #6f36b9;
+  }
+}
+
+pre {
+  display: inline-block;
+  width: max-content;
+  white-space: nowrap;
+}
+
+code {
+  padding: 3px 5px;
+}
+
+.page {
+  background-color: #fff;
+  line-height: 1.5rem;
+  padding: 0.5rem;
+  overflow-x: auto;
+}

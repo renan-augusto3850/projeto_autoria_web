@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Lição concuída</title>
+        <link rel="stylesheet" href="/css/index.css" />
+        <link rel="stylesheet" href="/css/ir_ao_playground.css" />
+        <link rel="icon" href="/imgs/logo.svg" type="image/svg+xml" />
+    </head>
+    <body>
+        <header class="transition-header">
+            <h1>Lição concluída!</h1>
+            <p>
+                Parabéns, Você finalizou a lição! Agora, você poderá colocar
+                tudo que você aprendeu em prática no Playground. Divirta-se!
+            </p>
+        </header>
+
+        <main>
+            <img src="/imgs/playground-image.png" alt="Playground" />
+            <button id="btn" onClick="proximaPagina()">Playground</button>
+        </main>
+    </body>
+</html>
+<script>
+    function proximaPagina() {
+        const newTab = window.open("/playground.html", '_blank');
+        if (newTab) {
+            newTab.focus();
+        }
+    }
+</script>

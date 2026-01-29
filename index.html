@@ -1,49 +1,72 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pagina Inicial</title>
-    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="/css/index.css" />
+    <link rel="stylesheet" href="/css/style.css" />
     <link rel="icon" href="/imgs/logo.svg" type="image/svg+xml" />
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="/js/index.js" defer></script>
+    <script src="/js/router.js" defer></script>
   </head>
-  <body>
-    <header>
-      <img src="img/Logo.svg" alt="logo do site" />
+  <body id="content">
+    <header id="header">
+      <img src="/imgs/logo.svg" alt="logo do site" />
+      <h1>H1 Learn</h1>
     </header>
     <main>
-      <h1>O aprendizado começa aqui.</h1>
-      <button>Começe Hoje</button>
-      <section>
+      <h2 class="text">O aprendizado começa aqui.</h2>
+      <button id="start_now">Começe Hoje!</button>
+      <section id="languages">
         <div>
-          <h2>Aprenda</h2>
-          <img src="img/Group 34.svg" alt="logo html" />
-          <p>HTML</p>
-          <img src="img/Vectorcss.png" alt="logo css" />
-          <p>CSS</p>
-          <img src="img/Vector.svg" alt="logo Javascript" />
-          <p>Javascript</p>
+          <h3 class="text">Aprenda</h3>
+          <div class="options">
+            <div class="languages_logo">
+              <img src="/imgs/html.svg" alt="logo html" />
+              <p>HTML</p>
+            </div>
+            <div class="languages_logo">
+              <img src="/imgs/css.svg" alt="logo css" />
+              <p>CSS</p>
+            </div>
+            <div class="languages_logo">
+              <img src="/imgs/js.svg" alt="logo Javascript" />
+              <p>Javascript</p>
+            </div>
+          </div>
         </div>
-        <p>Sem nenhum custo</p>
-        <p>
-          linha
-          ---------------------------------------------------------------------------------------------
+        <h3 class="text">Sem nenhum custo</h3>
+        <hr />
+        <p id="text_2">
+          Estude com a prática os conteúdos de maneira divertida.
         </p>
-        <p>Estude com a prática os conteúdos de maneira divertida.</p>
-        <div>
-          <img src="img/Lição - Selecione a correta.svg" />
-          <img src="img/Lição - Complete o código.svg" />
-          <img src="img/Lição - Selecione a correta - Mensagem.svg" />
+        <div class="demonstration">
+          <picture>
+            <source
+              id="source_425px"
+              media="(max-width: 425px)"
+              srcset="/imgs/img_demonstration_mobile.svg"
+            />
+            <img src="/imgs/demonstration.png" class="img_demonstration" />
+          </picture>
         </div>
-        <button>Começe Hoje</button>
+        <button id="start_now_2">Começe Hoje!</button>
       </section>
     </main>
     <footer>
-      <img src="img/Campus Pau dos Ferros - Logo_Negat Hor 1.svg" />
-      <p>
-        Criado por alunos do Instituto Federal de Ciências, Tecnologia e
-        Inovação do Rio Grande do Norte, campus Pau dos Ferros.
-      </p>
+      <div class="ifrn_students">
+        <img src="/imgs/campus.svg" />
+        <p>
+          Criado por alunos do Instituto Federal de Ciências, Tecnologia e
+          Inovação do Rio Grande do Norte, campus Pau dos Ferros.
+        </p>
+      </div>
     </footer>
   </body>
 </html>

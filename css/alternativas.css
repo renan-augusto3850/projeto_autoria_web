@@ -1,0 +1,99 @@
+main,
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+#lesson {
+  min-height: 100vh;
+  background-color: var(--gradient1);
+  flex: 1;
+  gap: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+}
+#options {
+  margin: 2rem;
+  display: flex;
+  align-items: self-start;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+}
+
+.option {
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+  padding: 0.5rem;
+  background-color: var(--purple3);
+  border-radius: 8px;
+}
+
+button {
+  padding: 1rem 1.2rem;
+  align-items: center;
+}
+
+#bnt_div {
+  display: flex;
+  align-self: center;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+label {
+  display: flex;
+  gap: 0.3rem;
+  color: black;
+  align-items: center;
+}
+
+.option:has(input:checked) {
+  background-color: var(--purple2);
+}
+
+.mark > img,
+.marked > img {
+  width: 1.6rem;
+  height: 1.6rem;
+}
+
+.marked {
+  display: none;
+}
+
+input[type="radio"]:checked ~ .marked {
+  display: block;
+}
+
+input[type="radio"]:checked ~ .mark {
+  display: none;
+}
+
+img {
+  transform: translateY(10%);
+}
+
+@media screen and (max-width: 425px) {
+  .option {
+    width: 100%;
+  }
+  label {
+    font-size: 1rem;
+  }
+  .bnt {
+    padding-top: 2rem;
+  }
+}

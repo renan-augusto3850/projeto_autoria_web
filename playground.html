@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/playground.css">
+    <link rel="icon" href="/imgs/logo.svg" type="image/svg+xml" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/highlightjs.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/highlight.min.js"></script>
+    <script src="/js/router.js" defer></script>
+    <script src="/js/playground.js" defer></script>
+    <title>Conteúdos - HTML</title>
+</head>
+<body id="content">
+    <main>
+        <div class="view">
+            <input id="html-radio" name="group" type="radio" checked>
+            <input id="css-radio" name="group" type="radio">
+            <input id="js-radio" name="group" type="radio">
+            <input id="result-radio" name="group" type="radio">
+
+            <div class="header">
+                <div class="nav">
+                    <button class="transparent-button" id="back_button">
+                        <img src="/imgs/arrow-left.svg" width="50" alt="Clique para voltar.">
+                    </button>
+
+                    <img src="/imgs/logo.svg" width="50">
+                </div>
+
+                <div class="tabs">
+                    <label class="tab" id="html-tab" for="html-radio">.html</label>
+                    <label class="tab" id="css-tab" for="css-radio">.css</label>
+                    <label class="tab" id="js-tab" for="js-radio">.js</label>
+                    <label class="tab" id="result-tab" for="result-radio">Resultado</label>
+                </div>
+
+                <div class="finish-div">
+                    <button id="finish_button">Concluir</button>
+                </div>
+            </div>
+
+            <div class="panels">
+                <div class="panel code" id="html-panel">
+                    <div id="html_div" spellcheck="false" contenteditable>&lt;h1&gt;AçÂo&lt;&#47;h1&gt;</div>
+                </div>
+
+                <div class="panel code" id="css-panel">
+                    <div id="css_div" spellcheck="false" contenteditable>/*Start coding*/</div>
+                </div>
+
+                <div class="panel code" id="js-panel">
+                    <div id="js_div" spellcheck="false" contenteditable>// let's get started</div>
+                </div>
+
+                <div class="panel result" id="result-panel">
+                    <iframe id="result_iframe"></iframe>
+                </div>
+            </div>
+        <div class="manual">
+            <iframe id="pages"></iframe>
+        </div>
+        </div>
+    </main>
+</body>
+</html>

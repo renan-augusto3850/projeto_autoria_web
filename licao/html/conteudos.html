@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/index.css" />
+    <link rel="stylesheet" href="/css/licao/html/conteudos.css" />
+    <link rel="icon" href="/imgs/logo.svg" type="image/svg+xml" />
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="/js/toast.js" defer></script>
+    <title>Conteúdos - HTML</title>
+  </head>
+  <body id="content">
+    <main>
+      <header>
+        <button class="transparent-button" id="back_button">
+          <img
+            src="/imgs/arrow-left.svg"
+            width="50"
+            alt="Clique para voltar."
+          />
+        </button>
+        <img src="/imgs/logo.svg" width="50" />
+        <h1>H1Learn</h1>
+
+        <button class="transparent-button user">
+          <img src="/imgs/user.svg" width="60" />
+        </button>
+      </header>
+
+      <div class="contents">
+        <section class="hover-section">
+          <img src="/imgs/html-basics.svg" />
+          <div>
+            <h2>HTML básico: tags básicas e parâmetros.</h2>
+          </div>
+          <span class="span_click"
+            ><a href="#" id="link_span"> começar </a>
+          </span>
+        </section>
+        <div id="toast_html" class="toast">
+          <div>
+            <span id="exit_button"><img src="/imgs/exit.svg" /></span>
+            <section>
+              <img src="/imgs/html-basics.svg" />
+              <div>
+                <h2>HTML básico: tags básicas e parâmetros.</h2>
+              </div>
+            </section>
+          </div>
+          <div>
+            <p>
+              Bem-vindo à lição de HTML básico. Aqui você vai aprender a
+              estrutura essencial de uma página web e as principais tags usadas
+              para criar seu conteúdo.
+            </p>
+          </div>
+          <button>
+            <a href="/licao/">Começar</a>
+          </button>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
+<script>
+  back_button.addEventListener("click", () => window.history.back());
+</script>

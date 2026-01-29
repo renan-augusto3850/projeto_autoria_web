@@ -15,7 +15,8 @@ body {
 }
 
 main {
-    position: relative;
+  position: relative;
+  width: max-content;
 }
 
 p {
@@ -23,8 +24,8 @@ p {
 }
 
 #logo {
-    width: 5rem;
-    cursor: pointer;
+  width: 4rem;
+  cursor: pointer;
 }
 
 #toast-notification {
