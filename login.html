@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -29,6 +29,19 @@
             aqui.
           </p>
         </div>
+        <main>
+            <div class="left">
+                <div class="logo-container">
+                    <a href="index.html">
+                        <img id="logo" src="/imgs/logo.svg" alt="Logo" />
+                    </a>
+                    <h1>H1Learn</h1>
+                    <p class="subtitle">
+                        o aprendizado começa
+                        <br />
+                        aqui.
+                    </p>
+                </div>
 
       <div class="ifrn_students">
         <img src="/imgs/campus.svg" />
@@ -48,29 +61,33 @@
             loading="lazy"
           />
 
-          <div class="inputs">
-            <div class="email-container">
-              <input
-                type="email"
-                placeholder="Email:"
-                name="email"
-                id="email"
-              />
+                    <div class="inputs">
+                        <div class="email-container">
+                            <input
+                                type="email"
+                                placeholder="Email:"
+                                name="email"
+                                id="email"
+                            />
 
-              <span
-                ><img src="/imgs/email.svg" alt="Ícone de email" loading="lazy"
-              /></span>
-            </div>
+                            <span>
+                                <img
+                                    src="/imgs/email.svg"
+                                    alt="Ícone de email"
+                                    loading="lazy"
+                                />
+                            </span>
+                        </div>
 
-            <div class="password-wrapper">
-              <div class="password-container">
-                <input
-                  type="password"
-                  placeholder="Senha:"
-                  name="password"
-                  id="password"
-                  maxlength="12"
-                />
+                        <div class="password-wrapper">
+                            <div class="password-container">
+                                <input
+                                    type="password"
+                                    placeholder="Senha:"
+                                    name="password"
+                                    id="password"
+                                    maxlength="12"
+                                />
 
                 <span id="eye-span-1"
                   ><img
@@ -88,17 +105,21 @@
                 </span>
               </div>
 
-              <a href="resetar_senha.html" id="forgot-password"
-                >Esqueceu sua senha?</a
-              >
+                            <a href="resetar_senha.html" id="forgot-password">
+                                Esqueceu sua senha?
+                            </a>
+                        </div>
+                    </div>
+
+                    <button type="submit">Entrar</button>
+
+                    <p>
+                        Não tem uma conta?
+                        <a href="cadastro.html">Cadastre-se</a>
+                        .
+                    </p>
+                </form>
             </div>
-          </div>
-
-          <button type="submit">Entrar</button>
-
-          <p>Não tem uma conta? <a href="cadastro.html"> Cadastre-se</a>.</p>
-        </form>
-      </div>
-    </main>
-  </body>
+        </main>
+    </body>
 </html>

@@ -1,12 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Google+Sans+html:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Google+Sans+html:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 body {
-    overflow: hidden;
+  overflow: hidden;
 }
 
 main {
-    flex-direction: row;
-    padding-top: 6.5rem;
+  flex-direction: row;
+  padding-top: 6.5rem;
 }
 
 .manual {
@@ -18,9 +18,9 @@ main {
 }
 
 .manual > iframe {
-    border: none;
-    border-radius: 0;
-    height: 87dvh;
+  border: none;
+  border-radius: 0;
+  height: 87dvh;
 }
 
 @media (max-width: 768px) {
@@ -68,8 +68,8 @@ main {
 }
 
 .view {
-    display: flex;
-    width: 100%;
+  display: flex;
+  width: 100%;
 }
 
 .header {
@@ -86,10 +86,10 @@ main {
 }
 
 .nav {
-    display: flex;
-    align-items: center;
-    padding: 1rem;
-    gap: 1rem;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  gap: 1rem;
 }
 
 .panels {
@@ -99,20 +99,22 @@ main {
   height: 100%;
 }
 
-div, iframe {
-    border-radius: 0.5rem;
+div,
+iframe {
+  border-radius: 0.5rem;
 }
 
 .panel {
-    position: relative;
-    height: 100%;
+  position: relative;
+  height: 100%;
 }
 
-.lesson, .lesson iframe {
-    width: 100%;
-    height: 100%;
+.lesson,
+.lesson iframe {
+  width: 100%;
+  height: 100%;
 }
 
 .lesson iframe {
-    border: none;
+  border: none;
 }

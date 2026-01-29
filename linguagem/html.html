@@ -1,50 +1,96 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/index.css">
-    <link rel="stylesheet" href="/css/html.css">
-    <link rel="icon" href="/imgs/logo.svg" type="image/svg+xml" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/index.css" />
+    <link rel="stylesheet" href="/css/html.css" />
+    <link rel="icon" href="imgs/logo.svg" type="image/svg+xml" />
     <script src="/js/html.js" defer></script>
     <script src="/js/router.js" defer></script>
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
     <title>Apresentação - HTML</title>
-</head>
-<body id="content">
+  </head>
+  <body id="content">
     <header id="header">
-        <button class="transparent-button" id="back-button">
-            <img src="/imgs/arrow-left.svg" width="40">
-        </button>
+      <button class="transparent-button" id="back-button">
+        <img src="/imgs/arrow-left.svg" width="40" />
+      </button>
 
-        <img src="/imgs/logo.svg" width="50">
+      <img src="/imgs/logo.svg" width="50" />
 
-        <h1>H1Learn</h1>
+      <h1>H1Learn</h1>
     </header>
     <article>
-        <div class="banner">
-            <img src="/imgs/html-banner.svg">
-        </div>
-        <h2>HTML</h2>
+      <div class="banner">
+        <img src="/imgs/html-banner.svg" />
+      </div>
+      <h2>HTML</h2>
 
-        <button class="start-lesson-button" id="start_lesson">Iniciar</button>
+      <button class="start-lesson-button" id="start_lesson">Iniciar</button>
 
-        <p>HTML (Linguagem de Marcação de HiperTexto) é o bloco de construção mais básico da web. Define o significado e a estrutura do conteúdo da web. Outras tecnologias além do HTML geralmente são usadas para descrever a aparência/apresentação (CSS) ou a funcionalidade/comportamento (JavaScript) de uma página da web.</p>
-        <p>"Hipertexto" refere-se aos links que conectam páginas da Web entre si, seja dentro de um único site ou entre sites. Links são um aspecto fundamental da web. Ao carregar conteúdo na Internet e vinculá-lo a páginas criadas por outras pessoas, você se torna um participante ativo na world wide web.</p>
-        <p>O HTML usa "Marcação" para anotar texto, imagem e outros conteúdos para exibição em um navegador da Web. A marcação HTML inclui "elementos" especiais, como <code>&lt;head&gt;</code>, <code>&lt;title&gt;</code>, <code>&lt;body&gt;</code>, <code>&lt;header&gt;</code>, <code>&lt;footer&gt;</code>, <code>&lt;article&gt;</code>, <code>&lt;section&gt;</code>, <code>&lt;p&gt;</code>, <code>&lt;div&gt;</code>, <code>&lt;span&gt;</code>, <code>&lt;img&gt;</code>, <code>&lt;aside&gt;</code>, <code>&lt;audio&gt;</code>, <code>&lt;canvas&gt;</code>, <code>&lt;datalist&gt;</code>, <code>&lt;details&gt;</code>, <code>&lt;embed&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;output&gt;</code>, <code>&lt;progress&gt;</code>, <code>&lt;video&gt;</code>, <code>&lt;ul&gt;</code>, <code>&lt;ol&gt;</code>, <code>&lt;li&gt;</code> e muitos outros.</p>
-        <p>Um elemento HTML é separado de outro texto em um documento por "tags", que consistem no nome do elemento entre "<" e ">". O nome de um elemento dentro de uma tag é insensível a maiúsculas e minúsculas. Isto é, pode ser escrito em maiúsculas, minúsculas ou um mistura. Por exemplo, a tag <code>&lt;title&gt;</code> pode ser escrita como <code>&lt;Title&gt;</code>, <code>&lt;TITLE&gt;</code> ou de qualquer outra forma.</p>
-        
-        <div class="useful-links">
-            <h3>Referências:</h3>
-            <ul>
-                <li>
-                    <a target="_blank" href="https://developer.mozilla.org/pt-BR/docs/Web/HTML">
-                        MDN - HTML: Linguagem de Marcação de Hipertexto
-                        <img src="/imgs/external-link.svg" width="20" alt="Ícone de link externo.">
-                    </a>
-                </li>
-            </ul>
-        </div>
+      <p>
+        HTML (Linguagem de Marcação de HiperTexto) é o bloco de construção mais
+        básico da web. Define o significado e a estrutura do conteúdo da web.
+        Outras tecnologias além do HTML geralmente são usadas para descrever a
+        aparência/apresentação (CSS) ou a funcionalidade/comportamento
+        (JavaScript) de uma página da web.
+      </p>
+      <p>
+        "Hipertexto" refere-se aos links que conectam páginas da Web entre si,
+        seja dentro de um único site ou entre sites. Links são um aspecto
+        fundamental da web. Ao carregar conteúdo na Internet e vinculá-lo a
+        páginas criadas por outras pessoas, você se torna um participante ativo
+        na world wide web.
+      </p>
+      <p>
+        O HTML usa "Marcação" para anotar texto, imagem e outros conteúdos para
+        exibição em um navegador da Web. A marcação HTML inclui "elementos"
+        especiais, como <code>&lt;head&gt;</code>, <code>&lt;title&gt;</code>,
+        <code>&lt;body&gt;</code>, <code>&lt;header&gt;</code>,
+        <code>&lt;footer&gt;</code>, <code>&lt;article&gt;</code>,
+        <code>&lt;section&gt;</code>, <code>&lt;p&gt;</code>,
+        <code>&lt;div&gt;</code>, <code>&lt;span&gt;</code>,
+        <code>&lt;img&gt;</code>, <code>&lt;aside&gt;</code>,
+        <code>&lt;audio&gt;</code>, <code>&lt;canvas&gt;</code>,
+        <code>&lt;datalist&gt;</code>, <code>&lt;details&gt;</code>,
+        <code>&lt;embed&gt;</code>, <code>&lt;nav&gt;</code>,
+        <code>&lt;output&gt;</code>, <code>&lt;progress&gt;</code>,
+        <code>&lt;video&gt;</code>, <code>&lt;ul&gt;</code>,
+        <code>&lt;ol&gt;</code>, <code>&lt;li&gt;</code> e muitos outros.
+      </p>
+      <p>
+        Um elemento HTML é separado de outro texto em um documento por "tags",
+        que consistem no nome do elemento entre "<" e ">". O nome de um elemento
+        dentro de uma tag é insensível a maiúsculas e minúsculas. Isto é, pode
+        ser escrito em maiúsculas, minúsculas ou um mistura. Por exemplo, a tag
+        <code>&lt;title&gt;</code> pode ser escrita como
+        <code>&lt;Title&gt;</code>, <code>&lt;TITLE&gt;</code> ou de qualquer
+        outra forma.
+      </p>
+
+      <div class="useful-links">
+        <h3>Referências:</h3>
+        <ul>
+          <li>
+            <a
+              target="_blank"
+              href="https://developer.mozilla.org/pt-BR/docs/Web/HTML"
+            >
+              MDN - HTML: Linguagem de Marcação de Hipertexto
+              <img
+                src="/imgs/external-link.svg"
+                width="20"
+                alt="Ícone de link externo."
+              />
+            </a>
+          </li>
+        </ul>
+      </div>
     </article>
-</body>
+  </body>
 </html>

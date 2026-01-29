@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pagina Inicial</title>
+    <link rel="stylesheet" href="/css/index.css" />
+    <link rel="stylesheet" href="/css/cursos.css" />
+    <link rel="icon" href="/imgs/logo.svg" type="image/svg+xml" />
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="/js/cursos.js" defer></script>
+    <script src="/js/router.js" defer></script>
+  </head>
+  <body id="content">
+    <header id="header">
+      <button class="transparent-button" id="back_button">
+        <img src="/imgs/arrow-left.svg" width="40" />
+      </button>
+      <img src="imgs/logo.svg" alt="logo do site" />
+      <h1>H1 Learn</h1>
+    </header>
+    <main>
+      <h3 class="text">Cursos:</h3>
+
+      <div class="options">
+        <div class="languages_logo" id="html_language">
+          <div class="img_languagues">
+            <img src="imgs/html.svg" class="html" alt="logo html" />
+          </div>
+          <div class="name">
+            <a href="/linguagem/html.html">HTML</a>
+          </div>
+        </div>
+
+        <div class="languages_logo">
+          <div class="img_languagues">
+            <img src="imgs/css.svg" alt="logo css" />
+          </div>
+
+          <div class="name">
+            <a href="#">CSS</a>
+          </div>
+        </div>
+        <div class="languages_logo">
+          <div class="img_languagues">
+            <img src="imgs/js.svg" alt="logo Javascript" />
+          </div>
+          <div class="name">
+            <a href="#">Javascript</a>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

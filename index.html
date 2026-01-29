@@ -1,13 +1,17 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pagina Inicial</title>
-    <link rel="stylesheet" href="css/index.css" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="/css/index.css" />
+    <link rel="stylesheet" href="/css/style.css" />
     <link rel="icon" href="/imgs/logo.svg" type="image/svg+xml" />
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
     <script src="/js/index.js" defer></script>
     <script src="/js/router.js" defer></script>
   </head>
@@ -43,10 +47,14 @@
           Estude com a prática os conteúdos de maneira divertida.
         </p>
         <div class="demonstration">
-          <img
-            src="/imgs/demonstration.png"
-            class="img_demonstration"
-          />
+          <picture>
+            <source
+              id="source_425px"
+              media="(max-width: 425px)"
+              srcset="/imgs/img_demonstration_mobile.svg"
+            />
+            <img src="/imgs/demonstration.png" class="img_demonstration" />
+          </picture>
         </div>
         <button id="start_now_2">Começe Hoje!</button>
       </section>
