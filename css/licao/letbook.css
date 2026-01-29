@@ -1,0 +1,58 @@
+:root {
+  --pageBackground: #fdfdfd;
+}
+
+.controls {
+  position: fixed;
+  display: flex;
+  gap: 1rem;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  height: max-content;
+}
+
+.controls > button {
+  background-color: #8c49e5;
+  color: #fff;
+  border-radius: 9999px;
+  padding: 0.7rem 0.5rem;
+  border: none;
+  font-size: 1.2rem;
+  width: 8rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.1s;
+
+  &:hover {
+    background-color: #6f36b9;
+  }
+}
+
+code {
+  background-color: #ececec;
+  border-radius: 5px;
+  padding: 2px 5px;
+}
+
+.element {
+  color: #6f00df;
+}
+
+.attribute {
+  color: #d341ff;
+}
+
+.attribute-content {
+  color: #00b997;
+}
+
+.commentary {
+  color: #2f2f2f;
+}
+
+.page {
+  background-color: #fff;
+  height: 100%;
+  line-height: 1.5rem;
+}
