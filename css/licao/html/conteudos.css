@@ -3,7 +3,12 @@ body {
 }
 
 .contents {
-  align-self: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.hover-section {
   width: 70%;
 }
 
@@ -68,14 +73,13 @@ section:hover > span {
   display: none;
   align-items: center;
   flex-direction: column;
-  padding: 2rem;
+  padding: 4rem 2rem;
   gap: 2rem;
   top: 50%;
   left: 50%;
   width: 70vw;
-  height: 85vh;
   transform: translate(-50%, -50%);
-  z-index: 99999999;
+  z-index: 1;
   border-radius: 20px;
   background-color: rgba(0, 0, 0, 0.2);
   border: 1px solid #ffffff4f;
@@ -135,7 +139,7 @@ section:hover > span {
   .toast {
     top: 40%;
     width: 70vw;
-    height: 60vh;
+    height: 70vh;
     margin-bottom: 40rem;
     h2 {
       font-size: 1.2rem;

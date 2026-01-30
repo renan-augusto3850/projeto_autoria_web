@@ -1,26 +1,26 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
 
 :root {
-  --pureWhite: #fff;
-  --white: #f4effaff;
-  --purple1: #532b88ff;
-  --purple2: #9b72cfff;
-  --purple3: #c8b1e4ff;
-  --purple4: #8c49e5;
-  --purple5: #624f9d;
-  --purple6: #2f184bff;
-  --red: #b22b26;
-  --green: #5f9220;
-  --green2: #00ff55;
-  --gradient1: #180c26;
-  --gradient2: #300c5a;
-  --gradient3: #320368;
-  --form: #3a1467;
-  --input-border: #8149cc;
-  --placeholder: #5e4646;
-  --button-hover: #6f36b9;
-  --blue1: #6b94c4;
-  --blue2: #84a7ce;
+    --pureWhite: #fff;
+    --white: #f4effaff;
+    --backgroundColor: #2f184bff;
+    --purple1: #532b88ff;
+    --purple2: #9b72cfff;
+    --purple3: #c8b1e4ff;
+    --purple4: #8c49e5;
+    --purple5: #624f9d;
+    --purple6: #2f184bff;
+    --red: #b22b26;
+    --green: #5f9220;
+    --gradient1: #180c26;
+    --gradient2: #300c5a;
+    --gradient3: #320368;
+    --form: #3a1467;
+    --input-border: #8149cc;
+    --placeholder: #5e4646;
+    --login-link: #8c49e5;
+    --button-hover: #6f36b9;
+    --blue1: #6B94C4;
 }
 
 * {
@@ -30,43 +30,21 @@
     box-sizing: border-box;
 }
 
-html,
-body,
-main {
-  width: 100%;
-  height: max-content;
-}
-
-body,
-main {
-  display: flex;
-  flex-direction: column;
-  background-color: var(--gradient1);
-  color: var(--pureWhite);
+body {
+    background-color: var(--gradient1);
 }
 
 button {
-  background-color: var(--purple4);
-  color: var(--pureWhite);
-  border-radius: 9999px;
-  padding: 1rem 1.5rem;
-  border: none;
-  font-size: 1.2rem;
-  width: max-content;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background-color 0.1s;
-}
-
-button:hover {
-  background-color: var(--button-hover);
-}
-
-.transparent-button {
-  display: flex;
-  background-color: transparent;
-  width: max-content;
-  text-wrap: nowrap;
+    color: var(--pureWhite);
+    background-color: var(--login-link);
+    border-radius: 9999px;
+    padding: 1rem 2rem;
+    margin: 1rem;
+    border: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.1s;
 }
 
 header {
@@ -94,6 +72,31 @@ header > .user {
 
 button:hover {
     background-color: var(--button-hover);
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--gradient1);
+  color: var(--pureWhite);
+  padding: 2rem;
+}
+
+article > h2 {
+  align-self: center;
+}
+
+code {
+  background-color: var(--purple1);
+  padding: 0 5px 0;
+  border-radius: 4px;
+}
+
+a {
+  color: var(--blue);
+  text-decoration: none;
+  display: flex;
+  gap: 4px;
 }
 
 h1,
@@ -128,37 +131,6 @@ p {
     transform: scale(1.2);
 }
 
-article {
-  display: flex;
-  flex-direction: column;
-  background-color: var(--gradient1);
-  color: var(--pureWhite);
-  padding: 2rem;
-}
-
-article > h2 {
-  align-self: center;
-}
-
-code {
-  background-color: var(--purple1);
-  padding: 0 5px 0;
-  border-radius: 4px;
-}
-
-a {
-  color: var(--blue1);
-  text-decoration: none;
-  display: flex;
-  gap: 4px;
-}
-
-h1,
-p {
-  line-height: 28px;
-  margin: 0.5rem;
-}
-
 .toast-error,
 .toast-correct {
   display: none;
@@ -181,7 +153,7 @@ p {
 }
 
 .toast-error.show {
-    animation: shake 0.4s;
+  animation: shake 0.4s;
 }
 
 @keyframes shake {
@@ -203,8 +175,8 @@ p {
 }
 
 .toast-icon {
-    width: 2.5rem;
-    transform: translateY(8%);
+  width: 2.5rem;
+  transform: translateY(8%);
 }
 
 .toast-wrapper {
@@ -213,3 +185,4 @@ p {
   left: 50%;
   transform: translateX(-50%);
 }
+

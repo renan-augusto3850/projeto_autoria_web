@@ -24,7 +24,8 @@ form {
 #options {
   margin: 2rem;
   display: flex;
-  align-items: self-start;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
   gap: 1rem;
   width: 100%;
@@ -33,7 +34,7 @@ form {
 .option {
   display: flex;
   gap: 1rem;
-  width: 100%;
+  width: 80%;
   padding: 0.5rem;
   background-color: var(--purple3);
   border-radius: 8px;
@@ -87,6 +88,14 @@ img {
 }
 
 @media screen and (max-width: 425px) {
+  #toast-correct, #toast-error{
+    p{
+      font-size: 1rem;
+    }
+  }
+  .toast-error, .toast-correct {
+    padding: 0.2rem 1rem;
+  }
   .option {
     width: 100%;
   }

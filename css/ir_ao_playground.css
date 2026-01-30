@@ -11,7 +11,13 @@ h1 {
 p {
     max-width: 80%;
 }
-
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90dvh;
+    flex-direction: column;
+}
 main {
     display: flex;
     flex-direction: column;

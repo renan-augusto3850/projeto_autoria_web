@@ -94,7 +94,7 @@ main {
     }
 }
 
-@media (max-width: 412px) {
+@media (max-width: 428px) {
     #show_tabs {
         display: block !important;
     }
@@ -125,8 +125,9 @@ main {
 #show_tabs {
     display: none;
     background-color: transparent;
-    font-size: 2rem;
+    margin: 0;
     font-weight: 300;
+    padding: 0;
     transform: translateX(10%);
 
     #close_icon {
@@ -145,6 +146,7 @@ main {
     position: fixed;
     top: 30%;
     right: 0;
+    margin: 0 !important;
     background-color: var(--purple6);
     width: 4rem;
     padding: 2px 2px 4px !important;
@@ -177,7 +179,12 @@ main {
     display: flex;
     width: 100%;
     padding: 1rem;
+    height: max-content;
     justify-content: flex-end;
+
+    button {
+        margin: 0;
+    }
 }
 
 .header {
@@ -196,13 +203,13 @@ main {
 .nav {
     display: flex;
     align-items: center;
-    padding: 1rem;
+    padding: 0 1rem;
     gap: 1rem;
 }
 
 .tabs {
     align-self: flex-end;
-    width: 44rem;
+    width: 48rem;
 }
 
 .tabs :nth-child(1 of .tab) {
@@ -233,6 +240,7 @@ div, iframe {
 .code > div{
     background-color: var(--purple6);
     border: solid 2px var(--purple2);
+    color: var(--pureWhite);
     font-family: "Google Sans html", monospace;
     outline: none;
     overflow: auto;

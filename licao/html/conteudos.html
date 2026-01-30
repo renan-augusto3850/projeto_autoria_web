@@ -11,6 +11,7 @@
       integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
       crossorigin="anonymous"
     ></script>
+    <script src="/js/router.js" defer></script>
     <script src="/js/toast.js" defer></script>
     <title>Conteúdos - HTML</title>
   </head>
@@ -27,7 +28,7 @@
         <img src="/imgs/logo.svg" width="50" />
         <h1>H1Learn</h1>
 
-        <button class="transparent-button user">
+        <button id="login_button" class="transparent-button user">
           <img src="/imgs/user.svg" width="60" />
         </button>
       </header>
@@ -69,4 +70,5 @@
 </html>
 <script>
   back_button.addEventListener("click", () => window.history.back());
+  login_button.addEventListener("click", () => window.location.assign("/login.html"))
 </script>
