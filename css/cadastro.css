@@ -26,6 +26,11 @@ main {
     text-align: center;
 }
 
+
+.left a {
+    justify-content: center;
+}
+
 .right {
     width: 50%;
     display: flex;
@@ -250,5 +255,13 @@ input.input-error {
         font-size: 1.2rem;
         height: 5rem;
         padding: 3rem 1.5rem;
+    }
+}
+
+p {
+    display: flex;
+
+    a {
+        margin-left: 0.3rem;
     }
 }

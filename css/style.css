@@ -133,7 +133,7 @@ button {
   }
 }
 footer {
-  margin-top: 15rem;
+  margin-top: 5rem;
   margin-bottom: 5rem;
   display: flex;
   align-items: center;
@@ -152,7 +152,6 @@ footer {
     }
   }
   #languages {
-    height: 115rem;
     p {
       font-size: 1.5rem;
     }

@@ -245,6 +245,14 @@ input.input-error {
     }
 }
 
+p {
+    display: flex;
+}
+
+p > a {
+    margin-left: 0.3rem;
+}
+
 .ifrn_students {
   background-color: var(--purple5);
   width: 40vw;
